@@ -183,3 +183,90 @@ a {
 }
 
 
+.main > .list1 {
+    grid-area: p1;
+    text-align: start;
+    padding-top: 150px;
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+.list1 span {
+    color: rgb(87, 85, 85);
+}
+
+.list1 a {
+    text-decoration-line: none;
+    text-transform: lowercase;
+    color: black;
+    font-size: 15px;
+    border: 1px solid black;
+    padding: 5px 30px;
+    transition: 0.6s;
+    transition-timing-function: ease;
+    transition-delay: 0.05s;
+}
+.list1 a:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+.main > .list2 {
+    grid-area: p2;
+}
+
+.list2 {
+    background-image: url(./media/jacket1.jpg);
+}
+
+.list2:hover {
+    background-image: url(./media/jacket1-1.jpg);
+}
+
+.main > .list3 {
+    grid-area: p3;
+}
+
+.list3 {
+    background-image: url(./media/vetrovka1.jpg);
+}
+
+.list3:hover {
+    background-image: url(./media/vetrovka1-1.jpg);
+}
+
+.main > .list4 {
+    grid-area: p4;
+}
+
+.list4 {
+    background-image: url(./media/sportcostume1.jpg);
+}
+
+.list4:hover {
+    background-image: url(./media/sportcostume1-1.jpg);
+}
+
+.main > .list5 {
+    grid-area: p5;
+}
+.main > .list6 {
+    grid-area: p6;
+}
+.main > .list7 {
+    grid-area: p7;
+}
+.main > .list8 {
+    grid-area: p8;
+}
+
+.lastprice {
+    color: rgb(87, 85, 85);
+    text-decoration: line-through;
+}
+
+.actualprice {
+    font-weight: bold;
+}
