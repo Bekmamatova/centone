@@ -16,13 +16,14 @@ a {
 
 .box1, .box2, .box3, .box4{
     font-size: 14px;
+
 }
 
 .box6, .box7, .box8, .box9, .box10 {
     text-transform: uppercase;
 }
 
-.header {
+.header{
     display:grid;
     height:150px;
     width: 100vw;
@@ -59,6 +60,7 @@ a {
     background-size: 30px;
     background-position: 50% 30%;
 }
+
 
 .header > .box2 {
     padding-top: 50px;
@@ -192,7 +194,7 @@ a {
 }
 
 .list1 span {
-    color: rgb(87, 85, 85);
+    color: rgb(85, 85, 85);
 }
 
 .list1 a {
@@ -263,10 +265,265 @@ a {
 }
 
 .lastprice {
-    color: rgb(87, 85, 85);
+    color: rgb(85, 85, 85);
     text-decoration: line-through;
 }
 
 .actualprice {
     font-weight: bold;
 }
+
+
+.categories {
+    width: 90vw;
+    margin-left: 250px;
+    display: grid;
+    grid-template-areas: 
+    "triko casual ceket"
+    "sonbahar kisin brownjacket"
+    "mont ofis elbise";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.categories > .category1 {
+    grid-area: triko;
+}
+.categories > .category2 {
+    grid-area: casual;
+}
+.categories > .category3 {
+    grid-area: ceket;
+}
+.categories > .category4 {
+    grid-area: sonbahar;
+}
+.categories > .category5 {
+    grid-area: kisin;
+}
+.categories > .category6 {
+    grid-area: brownjacket;
+}
+.categories > .category7 {
+    grid-area: mont;
+}
+.categories > .category8 {
+    grid-area: ofis;
+}
+.categories > .category9 {
+    grid-area: elbise;
+}
+
+.category1, .category2, .category3, .category4, .category5, .category6, .category7, .category8, .category9 {
+    transition: 0.4s;
+    transition-timing-function: ease-in;
+}
+
+.category1:hover {
+    color: rgb(223, 223, 223);
+    opacity: 0.3;
+}
+
+.category2:hover {
+    color: rgb(223, 223, 223);
+    opacity: 0.3;
+}
+.category3:hover {
+    color: rgb(223, 223, 223);
+    opacity: 0.3;
+}
+.category4:hover {
+    color: rgb(223, 223, 223);
+    opacity: 0.3;
+}
+.category5:hover {
+    color: rgb(223, 223, 223);
+    opacity: 0.3;
+}
+.category6:hover {
+    color: rgb(223, 223, 223);
+    opacity: 0.3;
+}
+.category7:hover {
+    color: rgb(223, 223, 223);
+    opacity: 0.3;
+}
+.category8:hover {
+    color: rgb(223, 223, 223);
+    opacity: 0.3;
+}
+.category9:hover {
+    color: rgb(223, 223, 223);
+    opacity: 0.3;
+}
+
+
+.subscription {
+    margin-top: 100px;    
+    font-size: 14px;
+    display: grid;
+    width: 100vw;
+    height: 130px;
+    grid-template-areas: 
+    "join subscribe";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: rgb(236, 236, 236);
+}
+
+.subscription .join-us {
+    grid-area: join;   
+    padding-top: 40px; 
+    padding-left: 300px;
+    padding-right: 100px;
+    line-height: 25px;
+}
+
+ hr {
+    transform: rotate(90deg);
+    width: 80px;
+    color: rgb(54, 54, 54);
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 65px;
+}
+
+.subscription> .subscribe-form {
+    grid-area: subscribe;
+    padding-top: 20px; 
+    padding-left: 80px;
+    line-height: 45px;
+}
+
+.subscription input {  
+    width: 400px; 
+    height: 40px;  
+    border: 1px solid grey;
+    background: url(./media/icons/turn.svg) no-repeat;
+    background-size: 10% auto;
+    background-position: 95% 50%;
+}
+
+footer .contacts {
+    display: grid;
+    width: 100vw;
+    height: 300px;
+    grid-template-areas: 
+    "corp help-info social";
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 40px;     
+    font-size: 14px;
+}
+footer .corporate{
+    grid-area: corp;    
+    padding-left: 200px;
+    line-height: 40px;
+}
+footer .help{
+    grid-area: help-info;
+    padding-left: 100px;
+    line-height: 40px;
+}
+footer .social{
+    grid-area: social;
+    text-align: center;
+    padding-right: 300px;
+}
+
+.social img {
+    height: 15px;
+    width: auto;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+.social hr {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.social .address {
+    margin-left: 10px;
+    background-image: url(./media/icons/locatornew.png);
+    background-repeat: no-repeat;
+    background-size: 25px auto;
+    background-position: left top;
+    padding-left: 17px;
+}
+.social .phone {
+    background-image: url(./media/icons/phone.svg);
+    background-repeat: no-repeat;
+    background-size: 15px auto;
+    background-position: 25% top;
+    padding-left: 10px;
+}
+.social .mail {
+    background-image: url(./media/icons/email.svg);
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    background-position: 5% top;
+    padding-left: 30px;
+}
+
+
+
+footer .copyright {
+    width: 100vw;
+    height: 50px;
+    background-color: black;
+    color: white;
+    padding: 15px 0 0 150px;
+}
+footer .copy {
+    padding-left: 700px;
+    font-size: 12px;
+}
+
+
+
+@media screen and (max-width: 1350px) {
+	.banner {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	.banner {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1220px) {
+	.banner {
+		width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 1200px) {
+	.icon-nav__list {
+		flex-wrap: wrap;
+	}
+	.header__form-input {
+		flex-wrap: wrap;
+		width: 350px;
+	}
+	.header__form-btn {
+		flex-wrap: wrap;
+		margin-top: 10px;
+	}
+	.main-nav__list {
+		flex-wrap: wrap;
+	}
+
+	.banner {
+		width: 1100px;
+	}
+	.logo {
+		width: 200px;
+	}
+}
+
+

@@ -122,11 +122,12 @@ hr {
     text-decoration-line: none;
     color: black;
 }
-.breadcrumbs {    
+.bread-crumbs {    
     padding-left: 20px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
 .details {
     display: grid;
     grid-template-areas: 
@@ -143,3 +144,206 @@ hr {
     height: 700px;
     width: auto;
 }
+
+
+
+.jacket_text {
+	width: 400px;
+	text-align: center;
+	height: auto;
+}
+
+
+.jacket_wrapper {
+	display: flex;
+	justify-content: space-evenly;
+	color: white;
+	padding: 20px 0;
+}
+
+.jacket_color {
+	position: relative;
+	padding-top: 40px;
+	color: black;
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+
+
+.jacket_color:before {
+	content: '';
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background-color: #000;
+	top: 0;
+	left: 2px;
+	border-radius: 50%;
+}
+
+
+
+.jacket_color:nth-child(1)::before {
+	background-color: black;
+}
+.jacket_color:nth-child(2)::before {
+	background-color: #c7c72a;
+}
+.jacket_color:nth-child(3)::before {
+	background-color: #6e6e67;
+}
+.jacket_color:nth-child(4)::before {
+	background-color: #0a51e9;
+}
+.jacket_color:nth-child(5)::before {
+	background-color: #2ab5c7;
+}
+
+.jacket_color:hover {
+	text-decoration: underline;
+	opacity: 1;
+}
+
+.cart-button {
+	height: 45px;
+	width: 200px;
+	border: none;
+	padding: 5px 10px;
+	color: #fcfafa;
+	cursor: pointer;
+	background-color: #000000;
+	border: 1px solid transparent;
+	font-size: 20px;
+	border-radius: 10px;
+}
+
+.cart-button:hover {
+	border: 1px solid #070707;
+	color: #000000;
+	background-color: #f8f8f8;
+}
+
+
+.subscription {
+    margin-top: 100px;    
+    font-size: 14px;
+    display: grid;
+    width: 100vw;
+    height: 130px;
+    grid-template-areas: 
+    "join subscribe";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: rgb(236, 236, 236);
+}
+
+.subscription .join-us {
+    grid-area: join;   
+    padding-top: 40px; 
+    padding-left: 300px;
+    padding-right: 100px;
+    line-height: 25px;
+}
+
+ hr {
+    transform: rotate(90deg);
+    width: 80px;
+    color: rgb(54, 54, 54);
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 65px;
+}
+
+.subscription> .subscribe-form {
+    grid-area: subscribe;
+    padding-top: 20px; 
+    padding-left: 80px;
+    line-height: 45px;
+}
+
+.subscription input {  
+    width: 400px; 
+    height: 40px;  
+    border: 1px solid grey;
+    background: url(./media/icons/turn.svg) no-repeat;
+    background-size: 10% auto;
+    background-position: 95% 50%;
+}
+
+footer .contacts {
+    display: grid;
+    width: 100vw;
+    height: 300px;
+    grid-template-areas: 
+    "corp help-info social";
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 40px;     
+    font-size: 14px;
+}
+footer .corporate{
+    grid-area: corp;    
+    padding-left: 200px;
+    line-height: 40px;
+}
+footer .help{
+    grid-area: help-info;
+    padding-left: 100px;
+    line-height: 40px;
+}
+footer .social{
+    grid-area: social;
+    text-align: center;
+    padding-right: 300px;
+}
+
+.social img {
+    height: 15px;
+    width: auto;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+.social hr {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.social .address {
+    margin-left: 10px;
+    background-image: url(./media/icons/locatornew.png);
+    background-repeat: no-repeat;
+    background-size: 25px auto;
+    background-position: left top;
+    padding-left: 17px;
+}
+.social .phone {
+    background-image: url(./media/icons/phone.svg);
+    background-repeat: no-repeat;
+    background-size: 15px auto;
+    background-position: 25% top;
+    padding-left: 10px;
+}
+.social .mail {
+    background-image: url(./media/icons/email.svg);
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    background-position: 5% top;
+    padding-left: 30px;
+}
+
+
+
+footer .copyright {
+    width: 100vw;
+    height: 50px;
+    background-color: black;
+    color: white;
+    padding: 15px 0 0 150px;
+}
+footer .copy {
+    padding-left: 700px;
+    font-size: 12px;
+}
+
